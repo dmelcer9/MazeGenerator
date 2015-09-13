@@ -160,7 +160,8 @@ public class MazeUI extends JFrame {
 
 		this.add(panel);
 		this.setDefaultCloseOperation(EXIT_ON_CLOSE);
-		this.setSize(640, 480);
+		this.setSize(800, 600);
+		this.setLocationByPlatform(true);
 		this.setVisible(true);
 
 		reloadButton.doClick();
