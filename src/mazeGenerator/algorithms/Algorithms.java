@@ -7,6 +7,7 @@ public enum Algorithms {
 	GrowingTreeNewest("Growing Tree (Newest Node)"),
 	GrowingTreeHalf("Growing Tree (50% Random, 50% Newest)"),
 	GrowingTreeRandom("Growing Tree (Random Node)"),
+	SideWinder("Sidewinder"),
 	BinaryTree("Binary Tree");
 	
 	
@@ -34,6 +35,9 @@ public enum Algorithms {
 			
 		case GrowingTreeRandom:			
 			return new GrowingTree(width,height,GrowingTree::randomNodes);
+			
+		case SideWinder:
+			return new Sidewinder(width,height);
 			
 		default:
 			return null;
